@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIf-eB-t9N">
-                                <rect key="frame" x="168" y="328" width="40" height="30"/>
+                                <rect key="frame" x="168" y="290" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="North"/>
                                 <connections>
@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMd-z5-BaM">
-                                <rect key="frame" x="219" y="390" width="30" height="30"/>
+                                <rect key="frame" x="280" y="390" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="East"/>
                                 <connections>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlD-xc-J9H">
-                                <rect key="frame" x="122" y="390" width="35" height="30"/>
+                                <rect key="frame" x="65" y="390" width="35" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="West"/>
                                 <connections>
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-p2-kzF">
-                                <rect key="frame" x="167" y="448" width="41" height="30"/>
+                                <rect key="frame" x="167" y="508" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="South"/>
                                 <connections>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e9-X8-697">
-                                <rect key="frame" x="162" y="546" width="50" height="30"/>
+                                <rect key="frame" x="162" y="595" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Restart"/>
                                 <connections>
@@ -109,13 +109,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapDot" translatesAutoresizingMaskIntoConstraints="NO" id="pEY-fn-AHI">
+                                <rect key="frame" x="152" y="381" width="72" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="eastControlButton" destination="aMd-z5-BaM" id="A62-c5-ArP"/>
                         <outlet property="eventLogUpdate" destination="Tvu-DB-cp6" id="p2H-Ty-aN1"/>
                         <outlet property="eventSupriseLabel" destination="O15-Bp-4lS" id="CmL-On-qNi"/>
+                        <outlet property="mapLocationImageView" destination="pEY-fn-AHI" id="dWm-Le-7zo"/>
                         <outlet property="northControlButton" destination="JIf-eB-t9N" id="VIM-Bo-QZd"/>
                         <outlet property="southControlButton" destination="5eh-p2-kzF" id="gJ3-Mu-HFY"/>
                         <outlet property="westControlButton" destination="DlD-xc-J9H" id="xEl-pc-MBG"/>
@@ -128,4 +133,7 @@
             <point key="canvasLocation" x="140" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mapDot" width="246" height="282"/>
+    </resources>
 </document>
